@@ -15,3 +15,9 @@ C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAcces
 C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1.resources
 C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_edit.resources
+C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writertitle_add.resources
+C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_imagesizechange.resources
+C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_addstatus.resources
+C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_contentstatusadd.resources
+C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_headingstatusadd.resources
