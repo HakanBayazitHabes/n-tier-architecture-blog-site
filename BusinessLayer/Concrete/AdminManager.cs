@@ -47,5 +47,10 @@ namespace BusinessLayer.Concrete
         {
             return _adminDal.List();
         }
+
+        public Admin GetbyIdstringUsername(string username)
+        {
+            return _adminDal.Get(x => x.AdminUserName == username);
+        }
     }
 }
