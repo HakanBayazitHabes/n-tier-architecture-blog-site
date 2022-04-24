@@ -26,15 +26,15 @@ namespace MVCProjeKampi.Controllers
             List<SelectListItem> valuecategory = (from x in cm.GetList()
                                                   select new SelectListItem
                                                   {
-                                                      Text=x.CategoryName,
-                                                      Value=x.CategoryID.ToString()
+                                                      Text = x.CategoryName,
+                                                      Value = x.CategoryID.ToString()
                                                   }).ToList();
 
             List<SelectListItem> valuewriter = (from x in wm.GetList()
                                                 select new SelectListItem
                                                 {
-                                                    Text=x.WriterName +" " +x.WriterSurName,
-                                                    Value=x.WriterID.ToString()
+                                                    Text = x.WriterName + " " + x.WriterSurName,
+                                                    Value = x.WriterID.ToString()
                                                 }).ToList();
 
 
@@ -43,15 +43,38 @@ namespace MVCProjeKampi.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult AddHeading(Heading p) 
+        public ActionResult AddHeading(Heading p)
         {
-            p.HeadingDate =DateTime.Parse(DateTime.Now.ToShortDateString());
+            p.HeadingDate = DateTime.Parse(DateTime.Now.ToShortDateString());
             hm.HeadingAdd(p);
             return RedirectToAction("Index");
         }
-        public ActionResult ContentByHeading()
+        [HttpGet]
+        public ActionResult EditHeading(int id)
         {
-            return View();
+            List<SelectListItem> valuecategory = (from x in cm.GetList()
+                                                  select new SelectListItem
+                                                  {
+                                                      Text = x.CategoryName,
+                                                      Value = x.CategoryID.ToString()
+                                                  }).ToList();
+            ViewBag.vlc = valuecategory;
+
+            var headingvalue = hm.GetByID(id);
+            return View(headingvalue);
+        }
+        [HttpPost]
+        public ActionResult EditHeading(Heading p)
+        {
+            hm.HeadingUpdate(p);
+            return RedirectToAction("Index");
+        }
+        public ActionResult DeleteHeading(int id)
+        {
+            var headingValue = hm.GetByID(id);
+            headingValue.HeadingStatus = false;
+            hm.HeadingDelete(headingValue);
+            return RedirectToAction("Index");
         }
     }
 }
