@@ -25,3 +25,4 @@ C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAcces
 C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_message_class.resources
 C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mih_add_ContactDate_class.resources
 C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_addimage_file.resources
+C:\Users\user\Desktop\Software\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_table.resources
